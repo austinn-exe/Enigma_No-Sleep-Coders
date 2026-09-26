@@ -1,200 +1,165 @@
-OilLoop
+# ♻️ OilLoop
 
-Team Name: No Sleep Coders
+> **A digital circular-economy platform for collecting, tracking, and
+> repurposing used cooking oil.**
 
-Team Members
+------------------------------------------------------------------------
 
-Akshaya Dhurai
+## 👥 Team
 
-Ramya Iyer
+### Team Name
 
-Vedika Chaudhari
+# **No Sleep Coders**
 
-Austin Dhason
+### Team Members
 
-Problem Statement
+  Name
+  ----------------------
+  **Akshaya Dhurai**
+  **Ramya Iyer**
+  **Vedika Chaudhari**
+  **Austin Dhason**
 
-Used cooking oil is often disposed of improperly or discarded as waste,
-which can cause environmental problems and results in the loss of a
-potentially useful raw material.
+------------------------------------------------------------------------
 
-OilLoop is designed as a digital platform for creating a circular system
-for used cooking oil. The platform connects oil suppliers, collectors,
-and processing partners so that collected oil can be tracked and
-directed toward suitable reuse and processing applications.
+## 📌 Problem Statement
 
-The system aims to:
+Used cooking oil is often disposed of improperly or treated as waste.
+This can create environmental problems while also wasting a valuable raw
+material that can be processed into useful products.
 
-Make used cooking oil collection easier to manage.
+**OilLoop** provides a digital platform that connects **suppliers,
+collectors, and processing partners** to create a more organized
+circular system for used cooking oil.
 
-Connect suppliers with collectors.
+The platform helps track collected oil, predict future availability,
+visualize environmental impact, and identify possible applications for
+recovered oil.
 
-Help collectors track and manage collected oil.
+### Our Goals
 
-Provide future availability predictions based on collection history.
+-   ♻️ Reduce improper disposal of used cooking oil.
+-   🤝 Connect oil suppliers with collectors.
+-   🚚 Help collectors manage collection activities.
+-   📊 Track the amount of oil recovered.
+-   📈 Predict future oil availability using collection history.
+-   🌱 Visualize the environmental impact of oil recovery.
+-   🧪 Support the classification and routing of collected oil.
+-   🔄 Promote the reuse of oil as a valuable industrial resource.
 
-Show the environmental impact of recovered oil.
+------------------------------------------------------------------------
 
-Classify and present possible uses of recovered oil.
+# 🚀 Key Features
 
-Support the conversion of waste oil into useful products such as:
+## 🏪 Supplier Dashboard
 
-Soap
+Suppliers can:
 
-Candles
+-   Add used cooking oil collection information.
+-   Track collection requests.
+-   Monitor the status of their oil batches.
+-   View relevant supplier information.
 
-Grease
+------------------------------------------------------------------------
 
-Bioplastics
+## 🚛 Collector Dashboard
 
-Resins
+The Collector dashboard helps manage the collection process.
 
-Surfactants
+### Features include:
 
-Renewable diesel
+-   View pending collection requests.
+-   Track suppliers and collection batches.
+-   Manage collection status.
+-   View collection history.
+-   **Future availability prediction** based on previous collection
+    data.
 
-Industrial fuel
+The prediction visualization provides an overview of the expected oil
+volume that may become available in the future.
 
-Oleochemicals
+------------------------------------------------------------------------
 
-Tech Stack
+## 🏭 Partner Dashboard
 
-Frontend
+The Partner section represents the processing side of the OilLoop
+ecosystem.
 
-React.js --- User interface and component-based application
-structure.
+Recovered oil can be directed toward different processing applications
+depending on its properties and intended use.
 
-Vite --- Frontend development server and build tool.
+------------------------------------------------------------------------
 
-JavaScript (ES6+) --- Application logic.
+## 🌱 Impact Dashboard
 
-HTML5 --- Application structure.
+The Impact dashboard provides visual insights into the amount of oil
+recovered through the platform.
 
-CSS3 --- Styling, responsive layouts, dashboards, charts, and
-visual components.
+It includes:
 
-Development Tools
+-   Total oil collected.
+-   Collection statistics.
+-   Supplier-type collection breakdown.
+-   Visual impact charts.
+-   Recovered-oil metrics.
 
-Node.js --- JavaScript runtime.
+------------------------------------------------------------------------
 
-npm --- Package and dependency management.
+## 🧴 Oil Uses Dashboard
 
-Git / GitHub --- Version control and project collaboration.
+OilLoop includes a separate dashboard showing possible applications of
+recovered oil.
 
-Main Modules
+### Possible Uses
 
-Supplier Dashboard
+  Application               Example Purpose
+  ------------------------- --------------------------------------
+  🧼 **Soap**               Soap and cleaning products
+  🕯️ **Candles**            Candle and wax-related products
+  ⚙️ **Grease**             Industrial and mechanical grease
+  🧪 **Bioplastics**        Bio-based material production
+  🧴 **Resins**             Resin and polymer applications
+  🫧 **Surfactants**        Cleaning and chemical products
+  ⛽ **Renewable Diesel**   Renewable transportation fuel
+  🏭 **Industrial Fuel**    Industrial energy applications
+  🧬 **Oleochemicals**      Chemical and industrial applications
 
-Allows suppliers to manage their used cooking oil collection information
-and track collection activity.
+> **Note:** Actual suitability of collected oil for a specific
+> application depends on its quality, composition, treatment
+> requirements, and laboratory/process validation.
 
-Collector Dashboard
+------------------------------------------------------------------------
 
-Provides collectors with:
+# 🛠️ Tech Stack
 
-Collection requests.
+## Frontend
 
-Collection status.
+  Technology              Purpose
+  ----------------------- -----------------------------------
+  **React.js**            Building the user interface
+  **Vite**                Development server and build tool
+  **JavaScript (ES6+)**   Application logic
+  **HTML5**               Page structure
+  **CSS3**                Styling and responsive design
 
-Supplier information.
+## Development Tools
 
-Future availability prediction.
+-   **Node.js** --- JavaScript runtime
+-   **npm** --- Dependency management
+-   **Git** --- Version control
+-   **GitHub** --- Repository and collaboration
 
-Collection history.
+------------------------------------------------------------------------
 
-Partner Dashboard
+# 📂 Project Structure
 
-Provides a view for processing partners to work with recovered oil and
-its potential applications.
-
-Impact Dashboard
-
-Displays the environmental and collection impact of OilLoop, including
-visual summaries of recovered oil.
-
-Oil Uses Dashboard
-
-Provides a dedicated view of potential applications for recovered oil,
-including:
-
-Soap
-
-Candles
-
-Grease
-
-Bioplastics
-
-Resins
-
-Surfactants
-
-Renewable diesel
-
-Industrial fuel
-
-Oleochemicals
-
-Setup Instructions
-
-Prerequisites
-
-Install the following before running the project:
-
-Node.js
-
-npm
-
-Git (optional, for version control)
-
-Check the installations:
-
-node --version
-npm --version
-
-1. Download or Clone the Project
-
-Using Git:
-
-git clone <repository-url>
-
-Then enter the project directory:
-
-cd OilLoop
-
-If you downloaded the ZIP file, extract it and open the extracted
-project folder in VS Code.
-
-2. Install Dependencies
-
-Open a terminal inside the project folder and run:
-
-npm install
-
-This installs all dependencies listed in package.json.
-
-3. Start the Development Server
-
-Run:
-
-npm run dev
-
-Vite will start the development server and display a local URL similar
-to:
-
-http://localhost:5173/
-
-Open that URL in your browser.
-
-Project Structure
-
-A typical project structure is:
-
+``` text
 OilLoop/
 │
 ├── public/
 │
 ├── src/
+│   │
 │   ├── components/
 │   │   ├── Home.jsx
 │   │   ├── Supplier.jsx
@@ -216,70 +181,178 @@ OilLoop/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
-The exact structure may vary depending on the current version of the
-project.
+> The exact structure may change as the project develops.
 
-Running the Project
+------------------------------------------------------------------------
 
-The basic workflow is:
+# 💻 Setup & Installation
 
+## Prerequisites
+
+Make sure you have installed:
+
+-   [Node.js](https://nodejs.org/)
+-   npm
+-   Git *(optional if downloading the ZIP)*
+
+Check your installation:
+
+``` bash
+node --version
+npm --version
+```
+
+------------------------------------------------------------------------
+
+## 1️⃣ Clone the Repository
+
+Open your terminal and run:
+
+``` bash
+git clone https://github.com/austinn-exe/Enigma_No-Sleep-Coders.git
+```
+
+Then move into the project directory:
+
+``` bash
+cd Enigma_No-Sleep-Coders
+```
+
+------------------------------------------------------------------------
+
+## 2️⃣ Install Dependencies
+
+Run:
+
+``` bash
+npm install
+```
+
+This installs all packages required by the project.
+
+------------------------------------------------------------------------
+
+## 3️⃣ Start the Development Server
+
+Run:
+
+``` bash
+npm run dev
+```
+
+You should see a local URL similar to:
+
+``` text
+http://localhost:5173/
+```
+
+Open the URL in your browser.
+
+------------------------------------------------------------------------
+
+# 🔄 Application Flow
+
+``` text
+                ┌──────────────────┐
+                │     SUPPLIER     │
+                │ Used Cooking Oil │
+                └────────┬─────────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │    COLLECTOR     │
+                │ Pickup & Tracking│
+                └────────┬─────────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │   OIL TESTING    │
+                │ & CLASSIFICATION │
+                └────────┬─────────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │    PARTNERS      │
+                │ Processing / Use │
+                └────────┬─────────┘
+                         │
+                         ▼
+              ┌──────────────────────┐
+              │     OIL USES         │
+              │                      │
+              │ Soap • Candles       │
+              │ Grease • Bioplastics │
+              │ Resins • Surfactants │
+              │ Renewable Diesel    │
+              │ Industrial Fuel     │
+              │ Oleochemicals       │
+              └──────────────────────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │      IMPACT      │
+                │ Environmental &  │
+                │ Collection Data  │
+                └──────────────────┘
+```
+
+------------------------------------------------------------------------
+
+# ▶️ Running the Project
+
+### Development
+
+``` bash
 npm install
 npm run dev
+```
 
-Then open the Vite URL shown in the terminal.
+### Production Build
 
-For a production build:
-
+``` bash
 npm run build
+```
 
-To preview the production build locally:
+### Preview Production Build
 
+``` bash
 npm run preview
+```
 
-Application Flow
+------------------------------------------------------------------------
 
-Supplier
-   ↓
-Used Cooking Oil Collection
-   ↓
-Collector
-   ↓
-Oil Tracking & Availability Prediction
-   ↓
-Processing / Partner
-   ↓
-Potential Oil Uses
-   ↓
-Environmental Impact
+# 🔮 Future Scope
 
-Future Scope
+The current project is a frontend prototype. Future versions can
+include:
 
-Possible future improvements include:
+-   🔐 User authentication and role-based access.
+-   🗄️ Backend API and database integration.
+-   🧪 Real laboratory-based oil quality testing.
+-   🤖 AI-assisted oil classification.
+-   📍 GPS-based collection tracking.
+-   🗺️ Collection route optimization.
+-   📈 More advanced availability prediction.
+-   🔔 Automated notifications for suppliers and collectors.
+-   🏭 Integration with real processing partners.
+-   🌍 More detailed environmental impact calculations.
+-   📱 Mobile application support.
 
-Backend API integration.
+------------------------------------------------------------------------
 
-Database integration.
+# 🌍 Vision
 
-User authentication and role-based access.
+**OilLoop aims to turn used cooking oil from a waste product into a
+valuable resource by connecting collection, processing, and reuse
+through a single digital platform.**
 
-Real-time collection tracking.
+> **Collect → Track → Classify → Process → Reuse → Create Impact ♻️**
 
-Laboratory-based oil quality testing.
+------------------------------------------------------------------------
 
-AI-assisted oil classification.
+## 📄 License
 
-More advanced availability prediction.
-
-Collection route optimization.
-
-Automated notifications.
-
-Production and processing partner integration.
-
-Real-world environmental impact calculations.
-
-License
-
-This project is developed as a prototype/project demonstration for the
-OilLoop initiative.
+This project is developed as a prototype/project demonstration by **No
+Sleep Coders**.
